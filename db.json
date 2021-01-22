@@ -1,0 +1,59 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "title": "title 1",
+      "thumbnailUrl": "http://localhost:9000/garden.jpg",
+      "rate": 70,
+      "rating": 4,
+      "specialist": {
+        "id": 1,
+        "fullName": "John Doe"
+      }
+    },
+    {
+      "id": 2,
+      "title": "title 2",
+      "thumbnailUrl": "http://localhost:9000/car.jpg",
+      "rate": 34,
+      "rating": 2,
+      "specialist": {
+        "id": 1,
+        "fullName": "Jane Doe"
+      }
+    },
+    {
+      "id": 3,
+      "title": "title 3",
+      "thumbnailUrl": "http://localhost:9000/office.jpg",
+      "rate": 50,
+      "rating": 6,
+      "specialist": {
+        "id": 1,
+        "fullName": "Doe Doe"
+      }
+    },
+    {
+      "id": 4,
+      "title": "title 4",
+      "thumbnailUrl": "http://localhost:9000/flowers.jpg",
+      "rate": 70,
+      "rating": 3,
+      "specialist": {
+        "id": 1,
+        "fullName": "John Doe"
+      }
+    },
+    {
+      "id": 5,
+      "title": "title 5",
+      "thumbnailUrl": "http://localhost:9000/grass.jpg",
+      "rate": 85,
+      "rating": 5,
+      "specialist": {
+        "id": 1,
+        "fullName": "John Doe"
+      }
+    }
+  ]
+}
