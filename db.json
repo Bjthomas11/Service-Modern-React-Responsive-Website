@@ -54,6 +54,17 @@
         "id": 1,
         "fullName": "John Doe"
       }
+    },
+    {
+      "id": 6,
+      "title": "title 6",
+      "thumbnailUrl": "http://localhost:9000/car.jpg",
+      "rate": 100,
+      "rating": 2,
+      "specialist": {
+        "id": 1,
+        "fullName": "John Doe"
+      }
     }
   ]
 }

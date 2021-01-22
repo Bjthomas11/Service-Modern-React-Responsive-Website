@@ -44,7 +44,7 @@ const Navbar = () => {
     <NavbarContainer>
       <BrandLogo logoSize={30} textSize={18} />
       <AccessContainer>
-        <NavLink>Specialist Portal</NavLink>
+        <NavLink to="/">Specialist Portal</NavLink>
         <Marginer direction="horizontal" margin={10} />
         <Seperator />
         <Marginer direction="horizontal" margin={10} />
@@ -52,7 +52,7 @@ const Navbar = () => {
           Register
         </Button>
         <Marginer direction="horizontal" margin={15} />
-        <NavLink>Login</NavLink>
+        <NavLink to="/login">Login</NavLink>
       </AccessContainer>
     </NavbarContainer>
   );
