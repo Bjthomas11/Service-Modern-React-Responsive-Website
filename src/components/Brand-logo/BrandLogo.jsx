@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Logo from "../../assets/images/logos/logo.png";
 
@@ -28,11 +29,13 @@ const LogoTitle = styled.h2`
 const BrandLogo = ({ logoSize, textSize, color, hideLogo }) => {
   return (
     <Container>
-      {!hideLogo && (
-        <LogoImage logoSize={logoSize}>
-          <img src={Logo} alt="logo" />
-        </LogoImage>
-      )}
+      <Link to="/">
+        {!hideLogo && (
+          <LogoImage logoSize={logoSize}>
+            <img src={Logo} alt="logo" />
+          </LogoImage>
+        )}
+      </Link>
 
       <LogoTitle textSize={textSize} color={color}>
         Serviced

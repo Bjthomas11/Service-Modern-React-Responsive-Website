@@ -12,7 +12,6 @@ const NavbarContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 0 15px;
-  position: fixed;
 
   background-color: ${({ transparent }) =>
     transparent ? "transparent" : "#274553"};
@@ -48,18 +47,18 @@ const Navbar = ({ transparent }) => {
     <NavbarContainer transparent={transparent}>
       <BrandLogo logoSize={30} textSize={18} />
       <AccessContainer>
-        <NavLink to="/portal">Specialist Portal</NavLink>
+        <NavLink to="/">Specialist Portal</NavLink>
         <Marginer direction="horizontal" margin={10} />
         <Seperator />
         <Marginer direction="horizontal" margin={10} />
-        <Link to="/login">
+        <Link to="/login/register/signup">
           <Button size={12} padding={0.5}>
             Register
           </Button>
         </Link>
 
         <Marginer direction="horizontal" margin={15} />
-        <NavLink to="/login">Login</NavLink>
+        <NavLink to="/login/register/signin">Login</NavLink>
       </AccessContainer>
     </NavbarContainer>
   );
