@@ -7,6 +7,8 @@ import TopSection from "./TopSection";
 import { deviceSize } from "../../responsive/responsive";
 import Button from "../../Button/Button";
 import { Marginer } from "../../marginer";
+import SpecialistAd from "../../SpecialistAd/SpecialistAd";
+import Footer from "../../Footer/Footer";
 
 const ContentContainer = styled.div`
   width: 100%;
@@ -19,13 +21,16 @@ const Home = () => {
   return (
     <PageContainer>
       <TopSection>
-        <Navbar />
+        <Navbar transparent />
       </TopSection>
       <InnerPageContainer>
         <ContentContainer>
           <RecServices />
         </ContentContainer>
+        <SpecialistAd />
       </InnerPageContainer>
+      <Marginer direction="vertical" margin={40} />
+      <Footer />
     </PageContainer>
   );
 };

@@ -20,18 +20,23 @@ const LogoImage = styled.div`
 const LogoTitle = styled.h2`
   margin: 0;
   font-size: ${({ textSize }) => (textSize ? textSize + "px" : "35px")};
-  color: #fff;
+  color: ${({ color }) => (color ? color : "#fff")};
   font-weight: 600;
   margin-left: 0.5rem;
 `;
 
-const BrandLogo = ({ logoSize, textSize }) => {
+const BrandLogo = ({ logoSize, textSize, color, hideLogo }) => {
   return (
     <Container>
-      <LogoImage logoSize={logoSize}>
-        <img src={Logo} alt="logo" />
-      </LogoImage>
-      <LogoTitle textSize={textSize}>Serviced</LogoTitle>
+      {!hideLogo && (
+        <LogoImage logoSize={logoSize}>
+          <img src={Logo} alt="logo" />
+        </LogoImage>
+      )}
+
+      <LogoTitle textSize={textSize} color={color}>
+        Serviced
+      </LogoTitle>
     </Container>
   );
 };

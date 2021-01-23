@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import LandingBK from "../../../assets/images/landing-page.jpg";
 import Image_1 from "../../../assets/images/Work only with the best.png";
@@ -69,7 +70,11 @@ const TopSection = ({ children }) => {
               Find the right specialist. <br /> For the right job.
             </Blurb>
             <Marginer direction="vertical" margin={15} />
-            <Button>Join Now</Button>
+            <Link to="/">
+              <Button size={20} padding={1}>
+                Join Now
+              </Button>
+            </Link>
           </LogoContainer>
           <ImgContainer>
             <img src={Image_1} alt="image_1" />
