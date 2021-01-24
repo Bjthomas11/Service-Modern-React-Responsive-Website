@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { LoginForm } from "./loginForm";
+import LoginForm from "./loginForm";
 import { motion } from "framer-motion";
 import { AccountContext } from "./accountContext";
-import { SignupForm } from "./signupForm";
+import SignupForm from "./signupForm";
 
 const BoxContainer = styled.div`
   width: 280px;
@@ -84,23 +84,23 @@ const backdropVariants = {
     width: "233%",
     height: "1050px",
     borderRadius: "20%",
-    transform: "rotate(60deg)",
+    transform: "rotate(60deg)"
   },
   collapsed: {
     width: "160%",
     height: "550px",
     borderRadius: "50%",
-    transform: "rotate(60deg)",
-  },
+    transform: "rotate(60deg)"
+  }
 };
 
 const expandingTransition = {
   type: "spring",
   duration: 2.3,
-  stiffness: 30,
+  stiffness: 30
 };
 
-export function AccountBox({ initialActive }) {
+const AccountBox = ({ initialActive }) => {
   const [isExpanded, setExpanded] = useState(false);
   const [active, setActive] = useState(
     initialActive ? initialActive : "signin"
@@ -161,4 +161,6 @@ export function AccountBox({ initialActive }) {
       </BoxContainer>
     </AccountContext.Provider>
   );
-}
+};
+
+export default AccountBox;
