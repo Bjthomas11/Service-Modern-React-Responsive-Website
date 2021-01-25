@@ -1,6 +1,5 @@
 {
-  "services": [
-    {
+  "services": [{
       "id": 1,
       "title": "title 1",
       "thumbnailUrl": "http://localhost:9000/garden.jpg",

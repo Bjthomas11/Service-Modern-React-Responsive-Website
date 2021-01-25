@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
-import { AccountBox } from "../../AccountBox/AccountBox";
+import AccountBox from "../../AccountBox/AccountBox";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Nav/Navbar";
 import { InnerPageContainer, PageContainer } from "../../pageContainer";
